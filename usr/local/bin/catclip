@@ -1,0 +1,14 @@
+#!/bin/bash
+# Written by me
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <filename>"
+    exit 1
+fi
+
+file_content=$(cat "$1")
+
+# Copy content to clipboard using wl-clipboard
+echo -n "$file_content" | wl-copy
+
+echo "Contents of '$1' copied to clipboard."
