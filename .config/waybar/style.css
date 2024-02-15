@@ -44,8 +44,8 @@ button {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-  background: inherit;
-  border-top: 2px solid #c9545d;
+  background-color: rgba(255, 255, 255, 0.3); /* Change to white with some transparency if needed */
+  border-top: 2px solid #ffffff; /* Add a 2-pixel solid border at the top with a different color if needed */
 }
 
 #workspaces button {
@@ -57,14 +57,14 @@ button:hover {
 }
 
 #workspaces button.focused {
-  /*    box-shadow: inset 0 -2px #c9545d; */
-  background-color: rgba(0,0,0,0.3);
-  color:#c9545d;
-  border-top: 2px solid #c9545d;
+  background-color: rgba(255, 255, 255, 1); /* Change to white with some transparency if needed */
+  color: #FFFFFF; /* Text color remains the same */
+  border-top: 2px solid #ffffff; /* Border color remains the same */
 }
 
+
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: #ffffff;
 }
 
 #mode {
@@ -129,22 +129,13 @@ button:hover {
 #battery.warning:not(.charging) {
   background-color: #f53c3c;
   color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #battery.critical:not(.charging) {
   background-color: #f53c3c;
   color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
+
 
 label:focus {
   background-color: #000000;
