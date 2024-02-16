@@ -127,12 +127,12 @@ button:hover {
 }
 
 #battery.warning:not(.charging) {
-  background-color: #f53c3c;
+  background-color: #000000;
   color: #ffffff;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #f53c3c;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -142,7 +142,7 @@ label:focus {
 }
 
 #network.disconnected {
-  background-color: #f53c3c;
+  background-color: #000000;
 }
 
 #temperature.critical {
