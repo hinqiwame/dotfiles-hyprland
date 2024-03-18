@@ -7,8 +7,8 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": ["sway/window"],
-    //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
-    "modules-right": ["mpd", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "backlight", "keyboard-state", "battery", "battery#bat2", "keyboard-state", "tray", "clock"],
+    //"modules-right": ["mpd", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": ["mpd", "temperature", "cpu", "memory","network", "pulseaudio", "backlight", "keyboard-state", "battery", "battery#bat2", "keyboard-state", "tray", "clock"],
     // Modules configuration
     "hyprland/workspaces": {
     //     "disable-scroll": true,
@@ -77,13 +77,13 @@
         "on-scroll-down": "mpc volume -2"
 
     },
-    "idle_inhibitor": {
+    /*"idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
             "activated": "",
             "deactivated": ""
         }
-    },
+    },*/
 	//"locale": {
         //"format": "Locale: {currentLocale}",
         //"update-interval": 3600 // Set the update interval as needed
