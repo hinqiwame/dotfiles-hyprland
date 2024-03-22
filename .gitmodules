@@ -1,0 +1,6 @@
+[submodule "usr/asd"]
+	path = usr/asd
+	url = https://github.com/hinqiwame/rice-clock
+[submodule "usr/local/bin"]
+	path = usr/local/bin
+	url = https://github.com/hinqiwame/rice-clock
