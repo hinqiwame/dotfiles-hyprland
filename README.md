@@ -7,3 +7,4 @@ git clone --recursive https://github.com/hinqiwame/dotfiles
 - [rice-clock](https://github.com/hinqiwame/rice-clock)<br>
 - [bottom](https://github.com/ClementTsang/bottom)<br>
 - [anicli-ru](https://github.com/vypivshiy/ani-cli-ru)<br>
+- polkit-gnome
