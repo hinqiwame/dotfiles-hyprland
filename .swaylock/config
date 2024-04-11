@@ -1,0 +1,91 @@
+# swaylock config (black and white)
+#
+# This configuration file sets up swaylock with a black and white color scheme.
+# The main color is black.
+
+# Background color (black)
+color=000000
+
+# Highlight color for backspace segments
+bs-hl-color=f5e0dc
+
+# Highlight color for backspace segments when Caps Lock is active
+caps-lock-bs-hl-color=f5e0dc
+
+# Highlight color for key press segments when Caps Lock is active
+caps-lock-key-hl-color=a6e3a1
+
+# Inside color (transparent)
+inside-color=00000000
+
+# Inside color for clear segments (transparent)
+inside-clear-color=00000000
+
+# Inside color for Caps Lock segments (transparent)
+inside-caps-lock-color=00000000
+
+# Inside color for verification segments (transparent)
+inside-ver-color=00000000
+
+# Inside color for wrong password segments (transparent)
+inside-wrong-color=00000000
+
+# Highlight color for individual keys
+key-hl-color=a6e3a1
+
+# Background color for the layout
+layout-bg-color=00000000
+
+# Border color for the layout
+layout-border-color=00000000
+
+# Text color for the layout
+layout-text-color=cdd6f4
+
+# Line color (transparent)
+line-color=00000000
+
+# Line color for clear segments (transparent)
+line-clear-color=00000000
+
+# Line color for Caps Lock segments (transparent)
+line-caps-lock-color=00000000
+
+# Line color for verification segments (transparent)
+line-ver-color=00000000
+
+# Line color for wrong password segments (transparent)
+line-wrong-color=00000000
+
+# Ring color for the indicator
+ring-color=ffffff
+
+# Ring color for clear segments
+ring-clear-color=f5e0dc
+
+# Ring color for Caps Lock segments
+ring-caps-lock-color=fab387
+
+# Ring color for verification segments
+ring-ver-color=89b4fa
+
+# Ring color for wrong password segments
+ring-wrong-color=eba0ac
+
+# Separator color (transparent)
+separator-color=00000000
+
+# Text color for the indicator
+text-color=cdd6f4
+
+# Text color for clear segments
+text-clear-color=f5e0dc
+
+# Text color for Caps Lock segments
+text-caps-lock-color=fab387
+
+# Text color for verification segments
+text-ver-color=89b4fa
+
+# Text color for wrong password segments
+text-wrong-color=eba0ac
