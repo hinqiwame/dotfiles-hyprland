@@ -48,7 +48,8 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": []
+            "5": [],
+			"6": []
         }
     },
     "memory": {
@@ -136,5 +137,10 @@
         "format": "󰤆",
         "tooltip": false,
         "on-click": "shutdown now &"
-    }
+    },
+	"custom/keyboard_layout": {
+		"format": "🇺 {}",
+		"exec": "keyboard_layout_monitor",
+		"on-click": "keyboard_layout_switcher"
+	}
 }
