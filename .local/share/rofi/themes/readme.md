@@ -1,3 +1,0 @@
-```
-themes for rofi here
-```
