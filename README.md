@@ -1,6 +1,7 @@
-![](~/Pictures/System/screenshot.png)
+
+
 ```
-git clone --recursive https://github.com/hinqiwame/dotfiles
+git clone https://github.com/hinqiwame/dotfiles
 ```
 - [pfetch](https://github.com/dylanaraps/pfetch)<br>
 - [pywal](https://github.com/dylanaraps/pywal)<br> 
