@@ -1,3 +1,0 @@
-```
-best theme ever xd
-```
