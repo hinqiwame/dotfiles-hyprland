@@ -2,7 +2,7 @@
 from sys import exc_info, argv
 import requests.exceptions
 
-help = """My self-coded tool to fetch prices of cryptocurrencies that I use.
+help = f"""My self-coded tool to fetch prices of cryptocurrencies that I use.
 
 Usage: {argv[0]} <coin>
 Example usage: {argv[0]} eth
