@@ -3,3 +3,9 @@ This subfolder contains a source and pre-compiled binary of my cryptocurrency pr
 ```sh
 chmod +x crypto && sudo cp crypto /usr/local/bin
 ```
+
+---
+
+```sh
+pyinstaller -F --onefile --clean --bootloader-ignore-signals crypto.py 
+```
