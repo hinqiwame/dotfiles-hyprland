@@ -3,7 +3,7 @@
 #
 
 # Let's fucking use my nvidia card, not Intel integrated one
-export DRI_PRIME=1
+export DRI_PRIME=1 # Swith to 0 render everything on Intel GPU for playing games like Dota 2 or Buckshot Roulette (vulkan-intel needs to be installed)
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
