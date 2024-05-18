@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: #000000;
+  background-color: transparent; /* #000000 */
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -95,11 +95,11 @@ window#waybar.hidden {
 #battery.urgent {
   background-color: #ffffff;
   color: #181825;
-  /*animation-name: blink;
+  animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate;*/
+  animation-direction: alternate;
 }
 #battery.charging {
   background-color: #000000;
