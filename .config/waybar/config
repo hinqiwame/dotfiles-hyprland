@@ -12,6 +12,7 @@
     ],
     "modules-right": [
         "tray",
+	"hyprland/language",
         "memory",
         "network",
         "pulseaudio",
