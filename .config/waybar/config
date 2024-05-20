@@ -12,7 +12,7 @@
     ],
     "modules-right": [
         "tray",
-	"hyprland/language",
+		"hyprland/language",
         "memory",
         "network",
         "pulseaudio",
@@ -60,6 +60,12 @@
     },
     "tray": {
         "spacing": 10
+    },
+    "hyprland/language": {
+        "format-en": "US",
+        "format-ru": "RU",
+	"min-length": 5,
+	"tooltip": false
     },
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
