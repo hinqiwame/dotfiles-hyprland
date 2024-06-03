@@ -41,13 +41,13 @@ install_stage=(
     swappy 
     grim 
     slurp 
-	  nemo
+    nemo
     btop
     firefox
     mpv
     pamixer 
     pavucontrol
-	  network-manager-applet
+    network-manager-applet
     brightnessctl  
     blueman  
     papirus-icon-theme 
