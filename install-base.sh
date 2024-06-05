@@ -52,6 +52,7 @@ install_stage=(
     blueman  
     papirus-icon-theme 
     ttf-jetbrains-mono-nerd 
+    ttf-cascadia-code
     noto-fonts-emoji 
     lxappearance 
     xfce4-settings
