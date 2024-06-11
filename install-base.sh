@@ -3,6 +3,8 @@
 # Original script: HyprV4 By SolDoesTech - https://www.youtube.com/@SolDoesTech
 # I modified it a bit to fit my needs
 
+# This worked PERFECTLY
+
 prep_stage=(
     qt5-wayland 
     qt5ct
