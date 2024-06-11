@@ -50,6 +50,7 @@ install_stage=(
     pamixer 
     pavucontrol
     network-manager-applet
+    swaync
     brightnessctl  
     blueman  
     papirus-icon-theme 
