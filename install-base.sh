@@ -51,6 +51,7 @@ install_stage=(
     pavucontrol
     network-manager-applet
     swaync
+    fuse
     brightnessctl  
     blueman  
     papirus-icon-theme 
