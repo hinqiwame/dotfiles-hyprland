@@ -44,6 +44,7 @@ install_stage=(
     grim 
     slurp 
     nemo
+    neovim
     btop
     firefox
     mpv
