@@ -21,6 +21,8 @@ prep_stage=(
     wl-clipboard 
     cliphist 
     python-requests 
+    python-pip
+    python-pipx
     pacman-contrib
 )
 
@@ -112,8 +114,7 @@ install_software() {
 clear
 
 # set some expectations for the user
-echo -e "$CNT - You are about to execute a script that would attempt to setup Hyprland.
-Please note that Hyprland is still in Beta."
+echo -e "$CNT - You are about to execute a script that would attempt to setup Hyprland."
 sleep 1
 
 # attempt to discover if this is a VM or not
@@ -143,7 +144,12 @@ fi
 
 # find the Nvidia GPU
 if lspci -k | grep -A 2 -E "(VGA|3D)" | grep -iq nvidia; then
-    ISNVIDIA=true
+    read -rep $'[\e[1;33mACTION\e[0m] - NVIDIA GPU was found, would you like to install proprietary drivers? (y,n) ' NOUVEAU
+    if [[ $NOUVEAU == "Y" || $NOUVEAU == "y" ]]; then
+        ISNVIDIA=true
+    else
+        ISNVIDIA=false
+    fi
 else
     ISNVIDIA=false
 fi
@@ -235,6 +241,20 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     # Clean out other portals
     echo -e "$CNT - Cleaning out conflicting xdg portals..."
     yay -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk &>> $INSTLOG
+fi
+
+read -rep $'[\e[1;33mACTION\e[0m] - Would you like to setup rofi? (y,n) ' ROFI
+if [[ $ROFI == "Y" || $ROFI == "y" ]]; then
+    echo -e "$CNT - Fetching repository..."
+    git clone https://github.com/lbonn/rofi
+    cd rofi
+    echo -e "$CNT - Compiling rofi..."
+    meson setup build
+    ninja -C build
+    sudo ninja -C build install
+    cd ..
+    rm -rf rofi
+    echo -e "$CNT - Rofi has been installed!"
 fi
 
 ### Script is done ###
