@@ -24,6 +24,7 @@ prep_stage=(
     python-pip
     python-pipx
     pacman-contrib
+    ly
 )
 
 nvidia_stage=(
