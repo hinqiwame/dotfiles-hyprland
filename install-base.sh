@@ -35,6 +35,7 @@ nvidia_stage=(
 )
 
 install_stage=(
+    bottom
     kitty  
     waybar
     swww 
