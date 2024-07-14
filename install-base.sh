@@ -55,11 +55,13 @@ install_stage=(
     mpv
     pamixer 
     pavucontrol
+    openrgb
     hyprpaper
     network-manager-applet
     swaync
     fuse
     flatpak
+    telegram-desktop
     brightnessctl  
     glxinfo
     blueman  
