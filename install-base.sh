@@ -52,10 +52,12 @@ install_stage=(
     mpv
     pamixer 
     pavucontrol
+    hyprpaper
     network-manager-applet
     swaync
     fuse
     brightnessctl  
+    glxinfo
     blueman  
     papirus-icon-theme 
     ttf-jetbrains-mono-nerd 
