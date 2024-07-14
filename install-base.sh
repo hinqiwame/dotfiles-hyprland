@@ -56,6 +56,7 @@ install_stage=(
     network-manager-applet
     swaync
     fuse
+    flatpak
     brightnessctl  
     glxinfo
     blueman  
