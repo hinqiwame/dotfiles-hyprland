@@ -39,6 +39,7 @@ install_stage=(
     waybar
     swww 
     swaylock-effects 
+    imagemagick
     wofi 
     wlogout 
     xdg-desktop-portal-hyprland 
