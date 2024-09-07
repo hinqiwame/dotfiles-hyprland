@@ -57,6 +57,7 @@ install_stage=(
     pavucontrol
     openrgb
     hyprpaper
+    riseup-vpn
     network-manager-applet
     swaync
     fuse
