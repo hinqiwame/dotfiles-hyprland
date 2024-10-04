@@ -9,11 +9,11 @@
     ],
     "modules-center": [
         "clock",
-	"custom/music"
+		"custom/music"
     ],
     "modules-right": [
         "tray",
-	"hyprland/language",
+		"hyprland/language",
         "network",
         "pulseaudio",
         "battery",
@@ -71,12 +71,12 @@
         "tooltip-format": "<tt>{calendar}</tt>",
         "format-alt": "  {:%a, %d %b %Y} |",
         "format": "  {:%H:%M:%S} |",
-	"interval": 1
+		"interval": 1
     },
-    "custom/music": {
-	"exec": "echo ♫ $(playerctl metadata artist) - $(playerctl metadata title)",
-	"interval": 1
-    },
+	"custom/music": {
+		"exec": "song=$(echo ♫ $(playerctl metadata artist) - $(playerctl metadata title)); [ ${#song} -gt 30 ] && echo ${song:0:30}... || echo $song",
+		"interval": 1
+	},
     "network": {
         "format-wifi" : "{icon}",
         "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
