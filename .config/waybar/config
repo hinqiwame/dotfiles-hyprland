@@ -8,12 +8,12 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock"
+        "clock",
+	"custom/music"
     ],
     "modules-right": [
         "tray",
-		"hyprland/language",
-        "memory",
+	"hyprland/language",
         "network",
         "pulseaudio",
         "battery",
@@ -69,8 +69,12 @@
     },
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
-        "format-alt": "  {:%a, %d %b %Y}",
-        "format": "  {:%H:%M:%S}",
+        "format-alt": "  {:%a, %d %b %Y} |",
+        "format": "  {:%H:%M:%S} |",
+	"interval": 1
+    },
+    "custom/music": {
+	"exec": "echo ♫ $(playerctl metadata artist) - $(playerctl metadata title)",
 	"interval": 1
     },
     "network": {
