@@ -76,6 +76,7 @@
 	"custom/music": {
 		"exec": "song=$(echo ♫ $(playerctl metadata artist) - $(playerctl metadata title)); [ ${#song} -gt 30 ] && echo ${song:0:30}... || echo $song",
 		//"tooltip-format": "song=($(playerctl metadata artist) - $(playerctl metadata title)); echo $song",
+		"tooltip": false,
 		"on-click": "playerctl play-pause",
 		"interval": 1
 	},
