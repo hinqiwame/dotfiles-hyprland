@@ -58,6 +58,8 @@ install_stage=(
     openrgb
     hyprpaper
     riseup-vpn
+    zip
+    unzip
     network-manager-applet
     swaync
     fuse
