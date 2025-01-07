@@ -276,4 +276,25 @@ if [[ "$ISNVIDIA" == true ]]; then
     exit
 fi
 
+read -rep $'[\e[1;33mACTION\e[0m] - Installation of Hyprland and utilities has finished. Would you like to setup dotfiles? (y, n)' DOTFILES
+if [[ $DOTFILES == "Y" || $DOTFILES == "y" ]]; then
+    read -rep $'[\e[1;33mACTION\e[0m] - PC or laptop? (p, l)' HARDWARE
+    if [[ $HARDWARE == "P" || $HARDWARE == "p" ]]; then
+        cp .config/hypr/hyprland-pc.conf ~/.config/hypr &>> $INSTLOG
+        mv ~/.config/hypr/hyprland-pc.conf ~/.config/hypr/hyprland.conf &>> $INSTLOG
+        cp .config/hypr/hyprpaper-pc.conf ~/.config/hypr &>> $INSTLOG
+        mv ~/.config/hypr/hyprpaper-pc.conf ~/.config/hypr/hyprpaper.conf &>> $INSTLOG
+    else
+        cp .config/hypr/hyprland-lt.conf ~/.config/hypr &>> $INSTLOG
+        mv ~/.config/hypr/hyprland-lt.conf ~/.config/hypr/hyprland.conf &>> $INSTLOG
+        cp .config/hypr/hyprpaper-lt.conf ~/.config/hypr &>> $INSTLOG
+        mv ~/.config/hypr/hyprpaper-lt.conf ~/.config/hypr/hyprpaper.conf &>> $INSTLOG
+    fi
+
+    cp .config/kitty/kitty.conf ~/.config/kitty &>> $INSTLOG
+    mkdir ~/.config/waybar &>> $INSTLOG
+    cp .config/waybar/* ~/.config/waybar &>> $INSTLOG
+    mkdir ~/.local/share/rofi && mkdir ~/.local/share/rofi/themes &>> $INSTLOG
+    cp .local/share/rofi/themes/hinqiwame.rasi ~/.local/share/rofi/themes &>> $INSTLOG
+
 echo "Done. Best of luck lol"
