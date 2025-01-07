@@ -64,7 +64,7 @@ install_stage=(
     swaync
     fuse
     flatpak
-    telegram-desktop
+    ayugram-desktop-bin
     brightnessctl  
     glxinfo
     blueman  
