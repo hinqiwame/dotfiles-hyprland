@@ -51,7 +51,7 @@ install_stage=(
     nemo
     neovim
     btop
-    firefox
+    yandex-browser
     mpv
     pamixer 
     pavucontrol
@@ -274,6 +274,8 @@ if [[ "$ISNVIDIA" == true ]]; then
     echo -e "$CAT - Since we attempted to setup an Nvidia GPU the script will now end and you should reboot.
     Please type 'reboot' at the prompt and hit Enter when ready."
     exit
+else
+    echo -e "$CAT - You might want to install nouveau drivers on your own."
 fi
 
 read -rep $'[\e[1;33mACTION\e[0m] - Installation of Hyprland and utilities has finished. Would you like to setup dotfiles? (y, n)' DOTFILES
@@ -296,5 +298,10 @@ if [[ $DOTFILES == "Y" || $DOTFILES == "y" ]]; then
     cp .config/waybar/* ~/.config/waybar &>> $INSTLOG
     mkdir ~/.local/share/rofi && mkdir ~/.local/share/rofi/themes &>> $INSTLOG
     cp .local/share/rofi/themes/hinqiwame.rasi ~/.local/share/rofi/themes &>> $INSTLOG
+    mkdir ~/.swaylock
+    cp .swaylock/config ~/.swaylock/ &>> $INSTLOG
+
+    echo "Don't forget to apply icons and gtk theme in nwg-look and set wayland everywhere in brower://flags"
+fi
 
 echo "Done. Best of luck lol"
