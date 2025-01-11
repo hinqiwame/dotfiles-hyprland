@@ -44,7 +44,8 @@ install_stage=(
     imagemagick
     wofi 
     wlogout 
-    xdg-desktop-portal-hyprland 
+    xdg-desktop-portal-hyprland
+    libnotify
     swappy 
     grim 
     slurp 
