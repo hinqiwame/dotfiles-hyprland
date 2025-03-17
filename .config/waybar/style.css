@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: #000000; /* #000000 */
+  background-color: transparent; /* #000000 */
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -32,57 +32,38 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  color: #1e1e2e;
-  background-color: #ffffff;
+  color: #ffffff; /* Keep the text color */
+  background-color: #000000; /* Light gray instead of white */
+  transition: background-color 0.3s, border 0.3s; /* Smooth transition */
 }
 
+
 #workspaces button:hover {
- box-shadow: inherit;
- text-shadow: inherit;
- color: #1e1e2e;
- background-color: #8c8c8c;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #1e1e2e;
+  background-color: #8c8c8c;
 }
 
 #workspaces button.urgent {
   background-color: #ffffff;
 }
 
-#memory,
-#custom-power,
 #battery,
-#backlight,
-#pulseaudio,
-#network,
 #clock,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
   background-color: #000000;
-  color: #181825;
-}
-
-#custom-power {
-  margin-right: 6px;
-}
-
-#custom-logo {
-  padding-right: 7px;
-  padding-left: 7px;
-  margin-left: 5px;
-  font-size: 15px;
-  border-radius: 8px 0px 0px 8px;
   color: #ffffff;
 }
 
-#memory {
-  background-color: #000000;
-  color: #ffffff;
-}
 #battery {
   background-color: #000000;
   color: #ffffff;
 }
+
 @keyframes blink {
   to {
     background-color: #f38ba8;
@@ -101,25 +82,10 @@ window#waybar.hidden {
   animation-iteration-count: infinite;
   animation-direction: alternate;*/
 }
+
 #battery.charging {
   background-color: #000000;
   color: #ffffff;
-}
-
-#backlight {
-  background-color: #000000;
-  color: #ffffff
-}
-
-#pulseaudio {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-#network {
-  background-color: #000000;
-  color: #ffffff;
-  padding-right: 17px;
 }
 
 #clock {
@@ -128,19 +94,18 @@ window#waybar.hidden {
   color: #ffffff;
 }
 
-#custom-power {
+#tray {
   background-color: #000000;
   color: #ffffff;
 }
 
-
 tooltip {
-border-radius: 8px;
-padding: 15px;
-background-color: #000000;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #000000;
 }
 
 tooltip label {
-padding: 5px;
-background-color: #000000;
+  padding: 5px;
+  background-color: #000000;
 }
