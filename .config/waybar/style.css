@@ -37,7 +37,6 @@ window#waybar.hidden {
   transition: background-color 0.3s, border 0.3s; /* Smooth transition */
 }
 
-
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
@@ -51,7 +50,9 @@ window#waybar.hidden {
 
 #battery,
 #clock,
-#tray {
+#tray,
+#pulseaudio,
+#network { /* Added styles for volume and network */
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
@@ -62,6 +63,16 @@ window#waybar.hidden {
 #battery {
   background-color: #000000;
   color: #ffffff;
+}
+
+#pulseaudio {
+  background-color: #000000; /* Background color for volume module */
+  color: #ffffff; /* Text color for volume module */
+}
+
+#network {
+  background-color: #000000; /* Background color for network module */
+  color: #ffffff; /* Text color for network module */
 }
 
 @keyframes blink {
@@ -97,6 +108,11 @@ window#waybar.hidden {
 #tray {
   background-color: #000000;
   color: #ffffff;
+  padding: 6px 12px;
+}
+
+#tray > * {
+  margin: 0 6px; /* Добавляет отступ слева и справа у КАЖДОЙ иконки */
 }
 
 tooltip {
